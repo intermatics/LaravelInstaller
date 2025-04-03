@@ -114,12 +114,14 @@ class EnvironmentManager
         'REDIS_HOST='.$request->redis_hostname."\n".
         'REDIS_PASSWORD='.$request->redis_password."\n".
         'REDIS_PORT='.$request->redis_port."\n\n".
-        'MAIL_DRIVER='.$request->mail_driver."\n".
+        'MAIL_MAILER='.$request->mail_driver."\n".
         'MAIL_HOST='.$request->mail_host."\n".
         'MAIL_PORT='.$request->mail_port."\n".
         'MAIL_USERNAME='.$request->mail_username."\n".
         'MAIL_PASSWORD='.$request->mail_password."\n".
-        'MAIL_ENCRYPTION='.$request->mail_encryption."\n\n".
+        'MAIL_ENCRYPTION='.$request->mail_encryption."\n".
+        'MAIL_FROM_ADDRESS='.'hello@example.com'."\n".
+        'MAIL_FROM_NAME='.'${APP_NAME}'."\n\n".
         'PUSHER_APP_ID='.$request->pusher_app_id."\n".
         'PUSHER_APP_KEY='.$request->pusher_app_key."\n".
         'PUSHER_APP_SECRET='.$request->pusher_app_secret;
